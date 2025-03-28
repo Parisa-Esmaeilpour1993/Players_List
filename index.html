@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HW6</title>
+  </head>
+  <body>
+    <form class="players-form">
+      <div class="inputs">
+        <input type="text" id="title" placeholder="title"/>
+        <div class="hidden" id="requiredTitle"></div>
+
+        <input type="text" id="description" placeholder="description" autocomplete="off"/>
+
+        <input type="text" id="details" placeholder="details" />
+        <div class="hidden" id="requiredDetails"></div>
+      </div>
+      <div class="button-select">
+        <button class="submit-btn" id="submit-btn">Submit</button>
+        <select name="" class="sort-select" id="sort-select" >
+          <option value="choose" selected>Choose</option>
+          <option value="Newest">Newest</option>
+          <option value="Oldest">Oldest</option>
+          <option value="A-Z">A-Z</option>
+        </select>
+      </div>
+    </form>
+    <div id="listOfPlayers"></div>
+    <div class="overlay hidden" id="overlay">
+    </div>
+    <div id="overlay-description" class="hidden"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
